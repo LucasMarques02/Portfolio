@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align:justify;
+    display: flex;
+    min-height: 100vh;
+    background-color:azure;
+}
+main {
+    z-index: 1;
+}
+
+.button_style1 {
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 0px solid black;
+    border-radius: 0px;
+    cursor: pointer;
+    min-height: 40px;
+    letter-spacing: normal;
+    transition-duration: 500ms;
+}
+.button_style1:hover{
+    letter-spacing: 0.1em;
+    border: 2px solid white;
+    border-style:dashed;
+    font-size: 21px;
+    transition-duration: 500ms;
+}
+.button_style1:active{
+    background-color:rgb(202, 202, 202);
+    transition-duration: 0ms;
+}
+.divstyle1{
+    border: 2px solid black;
+}   
+/* a opção do fit content é útil
+    pra quando eu precisar definir o
+    tamanho de uma div dependendo
+    do conteúdo dela
+*/
+.imgclass{
+    background-color: transparent;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+.imgclass:hover{
+    transition-duration: 500ms;
+
+}
+.p{
+    color: white;
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#imgdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+    width: 100%;
+    height: 110px;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+    white-space: nowrap;
+}
+#img1{
+    background-color: rgb(255, 255, 255);
+    border-radius: 210px;
+    width:50px;
+}
+#img1:hover{
+    border: 2px solid rgb(0, 0, 0);
+    border-style:dashed;
+    font-size: 21px;
+    transition-duration: 500ms;
+    width:52px;
+}
+#button1,#button2,#button3{
+    min-width:100%;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+    white-space: nowrap;
+    opacity:100;
+
+
+}
+.navclass{
+    position: fixed;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width:10em;
+    z-index: 10000;
+    background-color:rgb(0, 0, 0);
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+    overflow: hidden;
+
+    
+}
+.nav_closed{
+    position: fixed;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width:3em;
+    z-index: 10000;
+    background-color:rgb(0, 0, 0);
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
+    
+}
+/*div dos botões da barra lateral*/
+#div1{
+    background-color: black;
+    padding: 0;
+    padding-top: 10px;
+    transition-duration: 0.5s;
+    opacity:100;
+    transition-timing-function: ease;
+}
+
+#divbuttons{
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+    opacity:100;
+    padding: 0;
+
+}
+
+
+
+/* Para navegadores que suportam scrollbar styling */
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgray; /* Cor do "polegar" da scrollbar */
+    border-radius: 5px; /* Arredondamento */
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgray; /* Cor do fundo da scrollbar */
+    width: 14px;
+}
+
+
+
+/* SIDE BUTTON */
+
+
+.side_item a {
+    /*border: 2px solid blue;*/
+    color: white;
+    margin-left: 43%;
+}
+.side_item{
+    /*border: 2px solid red;*/
+    transition-duration: 500ms;
+}
+.side_item:hover{
+   /* border: 2px solid white;*/
+    transition-duration: 500ms;
+}
+#toggleBtn:hover{
+    transition-duration: 500ms;
+}
+
+
+
+
+
+/* ÁREA TESTE */
+
+.divteste{
+    background-color:aquamarine;
+    border: 2px solid black;
+    padding: 30px;
+
+}
+
+#divtestegrande{
+    margin:90px auto;
+    width: 100%;
+    padding: 20px;
+}
