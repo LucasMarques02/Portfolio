@@ -99,6 +99,8 @@ main {
 
 
 }
+
+
 .navclass{
     position: fixed;
     height: 100vh;
@@ -131,6 +133,8 @@ main {
 
     
 }
+
+
 /*div dos botões da barra lateral*/
 #div1{
     background-color: black;
@@ -202,7 +206,10 @@ main {
 }
 
 #divtestegrande{
-    margin:90px auto;
+    display: grid;
+    height: 53.5rem;
+    margin:2rem 2rem;
+    margin-left: 5.5rem;
     width: 100%;
     padding: 20px;
 }
