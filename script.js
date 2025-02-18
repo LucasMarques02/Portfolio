@@ -1,3 +1,4 @@
+
 opennav = document.getElementsByClassName('navclass');
 closednav = document.getElementsByClassName('nav_closed');
 navbutton = document.getElementById('toggleBtn');
@@ -9,12 +10,29 @@ button2 = document.getElementById('button2');
 button3 = document.getElementById('button3');
 
 
-
+opacity = 'off';
 state = 'open';
 
 
 divbuttons = document.getElementById('divbuttons');
 github = document.getElementById('imgdiv');
+
+
+
+
+
+//teste
+
+button3.addEventListener('click', function(){
+
+    if(opacity == 'off'){
+        opennav[0].style.opacity = '0.2';
+        opacity = 'on';
+    }else{
+        opennav[0].style.opacity = '1';
+        opacity = 'off';
+    }
+});
 
 
 

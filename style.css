@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Noto+Sans+KR:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 * {
     margin: 0;
@@ -10,7 +11,7 @@ body{
     text-align:justify;
     display: flex;
     min-height: 100vh;
-    background-color:azure;
+    background-color:rgb(13, 5, 17);
 }
 main {
     z-index: 1;
@@ -32,13 +33,14 @@ main {
 }
 .button_style1:hover{
     letter-spacing: 0.1em;
-    border: 2px solid white;
+    border: 2px solid rgb(207, 87, 218);
     border-style:dashed;
     font-size: 21px;
+    color: rgb(207, 87, 218);
     transition-duration: 500ms;
 }
 .button_style1:active{
-    background-color:rgb(202, 202, 202);
+    background-color:rgb(255, 255, 255);
     transition-duration: 0ms;
 }
 .divstyle1{
@@ -99,6 +101,8 @@ main {
 
 
 }
+
+
 .navclass{
     position: fixed;
     height: 100vh;
@@ -107,7 +111,6 @@ main {
     display: flex;
     flex-direction: column;
     width:10em;
-    z-index: 10000;
     background-color:rgb(0, 0, 0);
     transition-timing-function: ease;
     transition-duration: 0.5s;
@@ -123,17 +126,18 @@ main {
     display: flex;
     flex-direction: column;
     width:3em;
-    z-index: 10000;
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(13, 5, 17);
     overflow: hidden;
     transition-duration: 0.5s;
     transition-timing-function: ease;
 
     
 }
+
+
 /*div dos botões da barra lateral*/
 #div1{
-    background-color: black;
+    background-color: transparent;
     padding: 0;
     padding-top: 10px;
     transition-duration: 0.5s;
@@ -147,6 +151,10 @@ main {
     opacity:100;
     padding: 0;
 
+}
+
+#nav{
+    z-index: 10000;
 }
 
 
@@ -192,17 +200,105 @@ main {
 
 
 
+
 /* ÁREA TESTE */
 
-.divteste{
-    background-color:aquamarine;
-    border: 2px solid black;
-    padding: 30px;
+.containerstyle{
+    background:transparent;
+    border: 1px solid rgb(119, 0, 255);
+    border-radius: 15px;
 
 }
 
-#divtestegrande{
-    margin:90px auto;
+#divteste1, #divteste2{
+    background:linear-gradient( 45deg, rgb(13, 5, 17),rgb(41, 16, 54),rgb(13, 5, 17));
+    height: fit-content;
+
+
+    width: 13rem;
+    height: 14rem;
+
+
+    min-height: 14rem;
+    min-width: 13rem;
+
+    padding: 2rem;
+
+    margin:1rem;
+    /* box-shadow: 0px 0px 19px 12px rgb(193, 126, 255); */
+}
+
+
+
+#container{
+    display: flex;
+    flex-wrap: wrap; 
+    min-height: fit-content;
+    min-width: fit-content;
+
+    max-height: fit-content;
+
+    margin-top:2rem;
+    margin-left: 3rem;
+    padding-left: 50%;
+
+    margin-right: 0;
+
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 1.2rem;
+
+    background-color: transparent;
+    border-radius: 20px;
+
+    border: 2px solid rgb(255, 0, 0);
+
 }
+
+#divteste3, #divteste4, #divteste5, #divteste6{
+
+    background:linear-gradient( 45deg, rgb(13, 5, 17),rgb(41, 16, 54),rgb(13, 5, 17));
+    height: fit-content;
+
+
+    width: 13rem;
+    height: 14rem;
+
+
+    min-height: 14rem;
+    min-width: 13rem;
+
+    padding: 2rem;
+
+    margin:1rem;
+}
+
+
+@media (max-width: 570px){
+
+    #divteste1, #divteste2{
+
+        margin: 1rem;
+
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: none;   
+
+        min-width: 70%;
+    }
+
+    #container{
+
+        display: grid;
+    }
+}
+
+
+#hi{
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    }
