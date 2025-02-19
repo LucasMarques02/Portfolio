@@ -21,18 +21,7 @@ github = document.getElementById('imgdiv');
 
 
 
-//teste
 
-button3.addEventListener('click', function(){
-
-    if(opacity == 'off'){
-        opennav[0].style.opacity = '0.2';
-        opacity = 'on';
-    }else{
-        opennav[0].style.opacity = '1';
-        opacity = 'off';
-    }
-});
 
 
 
