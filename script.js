@@ -11,7 +11,7 @@ button3 = document.getElementById('button3');
 
 
 opacity = 'off';
-state = 'open';
+state = 'closed';
 
 
 divbuttons = document.getElementById('divbuttons');
@@ -30,16 +30,17 @@ navbutton.addEventListener('click', function(){
     nav.classList.toggle('nav_closed');
 
 
-    if(state == 'open'){
-        divbuttons.style.opacity = "0"
-        github.style.opacity = "0";
-        state = 'closed';
+    if(state == 'closed'){
+        divbuttons.style.opacity = "100"
+        github.style.opacity = "100";
+        state = 'open';
     }else{
 
-        divbuttons.style.opacity = "100";
-        github.style.opacity = "100";
+        divbuttons.style.opacity = "0";
+        github.style.opacity = "0";
         state = 'open';
     }
 
 
 });
+
