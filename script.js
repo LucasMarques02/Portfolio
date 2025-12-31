@@ -27,13 +27,13 @@ github = document.getElementById('imgdiv');
 
 
 navbutton.addEventListener('click', function(){
-    nav.classList.toggle('nav_closed');
+    nav.classList.toggle('navclosed');
 
 
-    if(state == 'closed'){
+    if(state == 'open'){
         divbuttons.style.opacity = "100"
         github.style.opacity = "100";
-        state = 'open';
+        state = 'closed';
     }else{
 
         divbuttons.style.opacity = "0";
@@ -43,4 +43,5 @@ navbutton.addEventListener('click', function(){
 
 
 });
+
 
