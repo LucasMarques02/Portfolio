@@ -27,7 +27,7 @@ github = document.getElementById('imgdiv');
 
 
 navbutton.addEventListener('click', function(){
-    nav.classList.toggle('navclosed');
+    nav.classList.toggle('navclass');
 
 
     if(state == 'open'){
@@ -43,5 +43,6 @@ navbutton.addEventListener('click', function(){
 
 
 });
+
 
 
